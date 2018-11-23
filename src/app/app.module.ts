@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 
 // 
 import { BluetoothLE } from '@ionic-native/bluetooth-le';
+import { BLE } from '@ionic-native/ble';
 // 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BluetoothLE } from '@ionic-native/bluetooth-le';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BluetoothLE
+    BluetoothLE,
+    BLE
   ]
 })
 export class AppModule {}
